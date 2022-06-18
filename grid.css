@@ -1,0 +1,40 @@
+body{
+    background-color:  hsl(179, 100%, 13%);
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-2]1fr [col-3] 1fr [col-end];
+    grid-template-rows: 40% 30% 30%;
+    grid-template-areas: "A A B"
+    "C D D"
+    "C E E";
+    gap: 15px;
+
+}
+.A{
+    background-color: orangered;
+    grid-area: A;
+}
+.B{
+    background-color: orange;
+    grid-area: B;
+}
+.C{
+    background-color: rgb(5, 176, 73);
+    grid-area: C;
+}
+.D{
+    background-color: aqua;
+    grid-area: D;
+}
+.E{
+    background-color: aqua;
+    grid-area: E;
+}
+
+
